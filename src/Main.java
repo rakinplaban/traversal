@@ -9,10 +9,13 @@ public class Main {
 
         Inorder i_traversal = new Inorder(info,left,right);
         Preorder p_traversal = new Preorder(info,left,right);
+        PostOrder po_traversal = new PostOrder(info,left,right);
 
         System.out.println("InOrder Traversal");
         i_traversal.inorderTraversal();
         System.out.println("\nPreOrder Traversal");
         p_traversal.preTraversal();
+        System.out.println("\nPostOrder Traversal");
+        po_traversal.postTraversal();
     }
 }
